@@ -1,7 +1,7 @@
 Details.cs
 [fix] [refactor]
 
-• Removed private object txt_email — was declared as wrong type with no matching TextBox on this form
+• Removed private object txt_email, was declared as wrong type with no matching TextBox on this form
 • Added private string userEmail field to store email passed in from Form2
 • Added string email = "" parameter to constructor so Form2 can pass the email through
 • btn_select_Click now passes userEmail to Purchase instead of broken txt_email.Text
@@ -10,7 +10,7 @@ Details.cs
 Form2.cs
 [fix]
 
-• Removed direct opening of Purchase with null for Details — would have crashed Confirm_Load
+• Removed direct opening of Purchase with null for Details, would have crashed Confirm_Load
 • Now opens Form3(txt_email.Text) after saving to DB, correctly starting the product selection flow
 
 
